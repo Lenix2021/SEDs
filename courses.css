@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,200;1,700&display=swap');
+
+/* ///////////////////////// definig the boddy property /////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    
+}
+
+:root{
+    --big-font:2.0rem;
+    --background-color:#0F2A3D;
+    --text-color:#0F2A3D;
+    --seccond-bg:#B64638;
+    --whitesmoke-col:#F5F5F5;
+    --hover-color:#12f7ff;
+    --bg-color:#250821;
+    --secon-bg-color:#292e33;
+    --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+}
+
+
+/* ///////////////////////// definig the nav styles /////////////////*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--secon-bg-color);
+    margin-top: 0;
+    height: 60px;
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+    top: 0;
+}
+
+.head{
+    color: var(--hover-color);
+    font-weight: 50;
+    font-size: 15px;
+}
+
+.navs ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navs li{
+   display: flex;
+}
+
+.navs a{
+    text-decoration: none;
+    color: var(--hover-color);
+    font-weight: 200px;
+    font-size: large;
+}
+
+.navs a:hover{
+    color: var(--hover-color);
+    text-shadow:0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6);
+}
+/*///////////////// About us section for /////////////////////////////*/
+section{
+    padding:10px 5%;
+}
+
+.talk{
+    min-height: 80vh;
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.first-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.first-part h1{
+    color: var(--hover-color);
+    font-size: 55px;
+}
+
+.first-part p{
+    line-height: 2;
+    color: #F5F5F5;
+}
+
+.seccond-part{
+    min-height: 400px;
+    width: 400px;
+    background: var(--hover-color);
+    margin-top: 60px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.seccond-part img{
+    height: 300px;
+    width: 400px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right:35%;
+}
+
+/*///////////////// About us section for /////////////////////////////*/
+
+.software-engieneering{
+    min-height: 250vh;
+    background: var(--secon-bg-color);
+    width: 100%;
+}
+
+.soft-text h2{
+    font-size: 40px;
+    color: var(--hover-color);
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-bottom: 2px solid #F5F5F5;
+    flex-wrap: wrap;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color: #12f7ff;
+}
+
+.contents .img img {
+    width: 500px;
+    height:500px ;
+    object-fit: contain;
+    
+}
+
+.programs{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.ms h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+.programs .program1{
+    width: 400px;
+    height: 350px;
+    background:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #12f7ff;
+    border-top: 1px solid #12f7ff;
+}
+
+.imgs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.imgs img{
+    object-fit: contain;
+    height: 200px;
+    width: 250px;
+}
+
+.info{
+    margin-top: -40px;
+}
+
+.info h1{
+    color: var(--hover-color);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.info p{
+    color: var(--hover-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* /////////////////////other branches in it//////////////////////////*/
+
+.other-side-attraction .intro-text h1{
+    text-align: center;
+    color: var(--hover-color);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.other-side-attraction .intro-text p{
+    text-align: center;
+    color: #12f7ff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.others-contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4em;
+    flex-wrap: wrap;
+}
+.others1{
+    height: 400px;
+    width: 200px;
+    background: var(--secon-bg-color);
+}
+
+
+
+/* /////////////////////footer styling//////////////////////////*/
+
+footer{
+    background-color: var(--bg-color);
+    height: 7vh;
+    width: 100%;
+    color: var(--hover-color);
+}
+
+footer h1{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+}

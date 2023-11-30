@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,200;1,700&display=swap');
+
+/* ///////////////////////// definig the boddy property /////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    
+}
+
+:root{
+    --big-font:2.0rem;
+    --background-color:#0F2A3D;
+    --text-color:#0F2A3D;
+    --seccond-bg:#B64638;
+    --whitesmoke-col:#F5F5F5;
+    --hover-color:#12f7ff;
+    --bg-color:#250821;
+    --secon-bg-color:#292e33;
+    --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+/* ///////////////////////// definig the nav styles /////////////////*/
+nav{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--secon-bg-color);
+    margin-top: 0;
+    height: 60px;
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+}
+
+.head{
+    color: var(--hover-color);
+    font-weight: 50;
+    font-size: 15px;
+}
+
+.navs ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navs li{
+   display: flex;
+}
+
+.navs a{
+    text-decoration: none;
+    color: var(--hover-color);
+    font-weight: 200px;
+    font-size: large;
+}
+
+.navs a:hover{
+    color: var(--hover-color);
+    text-shadow:0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6);
+}
+/*///////////////// About us section for /////////////////////////////*/
+section{
+    padding:10px 5%;
+}
+.aboutUs{
+    height: 100%;
+    min-height: 90vh;
+}
+
+.about-us-text{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-text h1{
+    color: var(--hover-color);
+}
+
+.about-us-text p{
+    text-align: center;
+    color: var(--hover-color);
+}
+
+.box{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.box11{
+    min-height: 350px;
+    width: 300px;
+    background:var(--secon-bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: var(--hover-color);
+}
+
+.box11 .header-about h1{
+    text-align: center;
+    margin: 10px;
+    color:#fdfdfd;
+}
+
+.box11 .statements p{
+    margin: 0.5rem 0 1rem 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.box11 span{
+    color:#fdfdfd;
+    font-size: 3rem;
+
+}
+
+.box11:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
+}
+
+/*//////css for what can we offer //////////////////////////////*/
+.what-we-offer{
+    width: 100%;
+    min-height: 90vh;
+    background: var(--secon-bg-color);
+}
+
+.what-we-offer h4{
+    text-align: center;
+    color: #fdfdfd;
+}
+
+.what-we-offer h1{
+    text-align: center;
+    color: var(--hover-color);
+}
+
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.offer1{
+    min-height: 500px; /*when codding the media querry increase this to contain everything*/
+    width: 400px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-img img{
+    object-fit: contain;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+}
+
+.offer h1{
+    text-align: center;
+    margin: 10px;
+    color:#fdfdfd;
+}
+
+.offer p{
+   
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+    text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ref{
+    margin-top: 1px;
+    width: 150px;
+    background-color: var(--hover-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    outline: var(--secon-bg-color);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+ .ref a{
+    text-decoration: none;
+    color:var(--bg-color);
+    font-weight: 700;
+}
+
+.offer1:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
+}
+
+/* /////////////////////footer styling//////////////////////////*/
+
+footer{
+    background-color: var(--bg-color);
+    height: 7vh;
+    width: 100%;
+    color: var(--hover-color);
+}
+
+footer h1{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+}
