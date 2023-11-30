@@ -127,7 +127,7 @@ section{
     margin-top: 20px;
     position: absolute;
     top: 0;
-    right:35%;
+    right:26%;
 }
 
 /*///////////////// About us section for /////////////////////////////*/
@@ -260,7 +260,7 @@ section{
    
 }
 .others1{
-    height: 410px;
+    height: 460px;
     width: 400px;
     background: var(--bg-color);
     border-radius: 10px;
