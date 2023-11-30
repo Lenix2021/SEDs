@@ -133,7 +133,7 @@ section{
 /*///////////////// About us section for /////////////////////////////*/
 
 .software-engieneering{
-    min-height: 300vh;
+    min-height: 310vh;
     background: var(--secon-bg-color);
     width: 100%;
 }
@@ -195,8 +195,8 @@ section{
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 60px;
-    border-bottom: 1px solid #12f7ff;
-    border-top: 1px solid #12f7ff;
+    border-bottom: 5px solid #12f7ff;
+    border-top: 5px solid #12f7ff;
 }
 
 .imgs{
@@ -264,8 +264,8 @@ section{
     width: 400px;
     background: var(--bg-color);
     border-radius: 10px;
-    border-bottom: 2px solid #F5F5F5;
-    border-top: 2px solid #F5F5F5;
+    border-bottom: 5px solid #F5F5F5;
+    border-top: 5px solid #F5F5F5;
 }
 .imgss{
     display: flex;
