@@ -133,7 +133,7 @@ section{
 /*///////////////// About us section for /////////////////////////////*/
 
 .software-engieneering{
-    min-height: 250vh;
+    min-height: 300vh;
     background: var(--secon-bg-color);
     width: 100%;
 }
@@ -251,15 +251,46 @@ section{
 }
 
 .others-contents{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
     flex-wrap: wrap;
+    gap: 3em;
+   
 }
 .others1{
-    height: 400px;
-    width: 200px;
-    background: var(--secon-bg-color);
+    height: 410px;
+    width: 400px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    border-bottom: 2px solid #F5F5F5;
+    border-top: 2px solid #F5F5F5;
+}
+.imgss{
+    display: flex;
+    justify-content:center;
+}
+
+.imgss img{
+    object-fit: contain;
+    height: 200px;
+    width: 250px;
+}
+
+.others1 h1{
+    color: var(--hover-color);
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.others1 p{
+    color: var(--hover-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 
