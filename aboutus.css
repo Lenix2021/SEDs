@@ -110,7 +110,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 
@@ -175,7 +175,7 @@ section{
     align-items: center;
     gap: 2em;
     margin-top: 30px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .offer1{
@@ -216,7 +216,7 @@ section{
     line-height: 1.6;
     text-align: center;
     word-wrap: break-word;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
