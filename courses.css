@@ -22,7 +22,6 @@
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
 }
 
-
 /* ///////////////////////// definig the nav styles /////////////////*/
 nav{
     display: flex;
@@ -90,7 +89,7 @@ section{
     align-items: center;
     gap: 5em;
     margin-top: 50px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .first-part{
@@ -106,19 +105,21 @@ section{
 }
 
 .first-part p{
-    line-height: 2;
-    color: #F5F5F5;
+    color:var(--hover-color);
+    font-size: 20px;
 }
 
 .seccond-part{
     min-height: 400px;
     width: 400px;
-    background: var(--hover-color);
+    background: var(--secon-bg-color);
     margin-top: 60px;
     border-radius: 10px;
     position: relative;
     top: 0;
     left: 0;
+    border-bottom: 8px solid var(--hover-color);
+    border-top:8px solid var(--hover-color);
 }
 
 .seccond-part img{
@@ -150,7 +151,7 @@ section{
     align-items: center;
     gap: 2em;
     border-bottom: 2px solid #F5F5F5;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .message {
@@ -159,6 +160,7 @@ section{
     align-items: center;
     width: 60%;
     color: #12f7ff;
+    font-size: 25px;
 }
 
 .contents .img img {
@@ -174,15 +176,16 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3em;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .ms h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F5F5F5;
-    font-size: 20px;
+    color:var(--hover-color);
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .programs .program1{
@@ -197,6 +200,11 @@ section{
     margin-bottom: 60px;
     border-bottom: 5px solid #12f7ff;
     border-top: 5px solid #12f7ff;
+}
+
+.program1:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
 }
 
 .imgs{
@@ -255,18 +263,25 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 3em;
    
 }
 .others1{
-    height: 460px;
+    min-height: 460px;
     width: 400px;
     background: var(--bg-color);
     border-radius: 10px;
     border-bottom: 5px solid #F5F5F5;
-    border-top: 5px solid #F5F5F5;
+    border-top: 5px solid var(--hover-color);
 }
+
+.others1:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
+}
+
+
 .imgss{
     display: flex;
     justify-content:center;
@@ -292,8 +307,6 @@ section{
     font-size: 20px;
     font-weight: 300;
 }
-
-
 
 /* /////////////////////footer styling//////////////////////////*/
 
