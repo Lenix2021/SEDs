@@ -89,7 +89,7 @@ section{
     align-items: center;
     gap: 5em;
     margin-top: 50px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .first-part{
@@ -128,7 +128,7 @@ section{
     margin-top: 20px;
     position: absolute;
     top: 0;
-    right:26%;
+    right:15%;
 }
 
 /*///////////////// About us section for /////////////////////////////*/
@@ -151,7 +151,7 @@ section{
     align-items: center;
     gap: 2em;
     border-bottom: 2px solid #F5F5F5;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .message {
@@ -176,7 +176,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3em;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .ms h2{
@@ -263,7 +263,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 3em;
    
 }
