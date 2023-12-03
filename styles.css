@@ -601,7 +601,7 @@ footer h1{
         color: #fdfdfd;
     }
     .image img{
-        width: 500px;
+        width: 400px;
         height:500px;
         object-fit: contain;
     }
