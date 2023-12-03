@@ -600,6 +600,11 @@ footer h1{
         top: 70%;
         color: #fdfdfd;
     }
+    .image img{
+        width: 500px;
+        height:500px;
+        object-fit: contain;
+    }
     .reviews .container {
         width: 100%;
         overflow-x: auto;
