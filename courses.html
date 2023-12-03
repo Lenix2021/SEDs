@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="courses.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav>
@@ -20,14 +21,39 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
+        <div id="menu-icon"  class="bx bx-menu"></div>
     </nav>
+      <div id="menu-icon"  class="bx bx-menu"></div>
+    </nav>
+    <div id="menu-sidebar">
+        <div class="close-button" id="close-menu">
+            <i class='bx bx-x'></i>
+        </div>
+        <div class="menu-items">
+            <div class="back">
+                <a href="#" onclick="location.href='/index.html'">HOME</a>
+            </div>
+            <div class="back">
+                <a href="#" onclick="location.href='/aboutus.html'">ABOUT</a>
+            </div>
+            <div class="back">
+                <a href="#" onclick="location.href='/courses.html'">COURSES</a>
+            </div>
+            <div class="back">
+                <a href="#" onclick="location.href='/index.html'">CONTACT</a>
+            </div>
+            <div class="back">
+                <a href="#" onclick="location.href='/index.html'">GALLERY</a>
+            </div>
+        </div>
+    </div>
     <section class="talk">
         <div class="container">
            <div class="first-part">
-            <h1>Our Courses</h1>
-            <p>
-                Welcome to our website, where a diverse range of courses and programs awaits your exploration. Whether you are eager to enhance your professional skills, delve into a new field of study, or simply pursue a passion, our offerings cater to various interests and aspirations
-            </p>
+                <h1>Our Courses</h1>
+                <p>
+                    Welcome to our website, where a diverse range of courses and programs awaits your exploration. Whether you are eager to enhance your professional skills, delve into a new field of study, or simply pursue a passion, our offerings cater to various interests and aspirations
+                </p>
            </div>
            <div class="seccond-part">
                 <img src="/img/two.png" alt="">
@@ -57,7 +83,7 @@
                     <img src="img/hjs.png" alt="">
                 </div>
                 <div class="info">
-                    <h1>HTML + CSS + Javascript</h1>
+                    <h1>html + CSS + Javascript</h1>
                     <p>
                         HTML organizes content, CSS styles it, and JavaScript adds interactivity, forming the foundational toolkit for modern software development.
                     </p>
@@ -68,7 +94,7 @@
                     <img src="img/rnb.png" alt="">
                 </div>
                 <div class="info">
-                    <h1>NODE.js+REACT+BOOTSTRAP</h1>
+                    <h1>Node.js+React+Bootstrap</h1>
                     <p>
                         Node.js for backend, React for dynamic UIs, and Bootstrap for streamlined design create a powerful stack for modern softwares.
                     </p>
@@ -79,7 +105,7 @@
                     <img src="img/fm.png" alt="">
                 </div>
                 <div class="info">
-                    <h1>MYSQL+FIREBASE</h1>
+                    <h1>Mysql+Firebase</h1>
                     <p>
                         MySQL stores structured data, Firebase handles real-time aspects. Together, they form a powerful duo for flexible software development.
                     </p>
@@ -167,7 +193,6 @@
     <footer>
         <h1>coppyright@2019</h1>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="courses.js"></script>
 </body>
 </html>

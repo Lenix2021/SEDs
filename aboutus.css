@@ -40,6 +40,50 @@ nav{
     width: 100%;
 }
 
+#menu-sidebar{
+    position: absolute;
+    z-index: 3001;
+    height:150px;
+    width:100%;
+    background: var(--hover-color);
+    visibility: hidden;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: var(--hover-color);
+    visibility: hidden;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.close-button{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.close-button i{
+    font-size: 25px;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    margin-right:10px;
+    border-radius:2px;
+}
+
+.menu-items .back a{
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
 .head{
     color: var(--hover-color);
     font-weight: 50;
@@ -155,7 +199,7 @@ section{
 /*//////css for what can we offer //////////////////////////////*/
 .what-we-offer{
     width: 100%;
-    min-height: 90vh;
+    min-height: 73vh;
     background: var(--secon-bg-color);
 }
 
@@ -179,14 +223,15 @@ section{
 }
 
 .offer1{
-    min-height: 500px; /*when codding the media querry increase this to contain everything*/
-    width: 400px;
+    height: 470px; /*when codding the media querry increase this to contain everything*/
+    width: 300px;
     background-color: var(--bg-color);
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .offer-img{
@@ -198,18 +243,19 @@ section{
 .offer-img img{
     object-fit: contain;
     border-radius: 10px;
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
 }
 
 .offer h1{
     text-align: center;
     margin: 10px;
     color:#fdfdfd;
+    font-size: 20px;
 }
 
 .offer p{
-   
+   font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #bdbdbd;
@@ -261,4 +307,14 @@ footer h1{
     font-size: 20px;
     text-align: center;
     padding-top: 3px;
+}
+
+@media screen and (max-width:768px) {
+
+    .navs{
+        display: none;
+    }
+    #menu-icon{
+        visibility: visible;
+    }
 }
