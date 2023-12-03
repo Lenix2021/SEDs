@@ -609,7 +609,7 @@ footer h1{
         background:var(--secon-bg-color);
     }
     .reviews .container{
-        width: 150%;
+        width: 1000px;
     }
 }
 
