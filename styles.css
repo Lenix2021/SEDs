@@ -78,6 +78,7 @@ nav{
     font-size: 30px;
     color: var(--hover-color);
     visibility: hidden;
+    margin-right: 30px;
 }
 
 #menu-icon:hover{
@@ -607,7 +608,9 @@ footer h1{
         scroll-snap-align: start;
         background:var(--secon-bg-color);
     }
-    
+    .reviews .container{
+        width: 100%;
+    }
 }
 
 
