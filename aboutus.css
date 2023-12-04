@@ -41,7 +41,7 @@ nav{
 }
 
 #menu-sidebar{
-    position: absolute;
+    position:fixed;
     z-index: 3001;
     height:150px;
     width:100%;
