@@ -607,7 +607,7 @@ footer h1{
     }
 
     .item .images img {
-        margin-left: 150px; /* Reset margin for smaller screens */
+        margin-left: 100px; /* Reset margin for smaller screens */
     }
     .about-text .btn{
         display: flex;
