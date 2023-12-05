@@ -478,13 +478,21 @@ footer h1{
     }
     .german-lesons-head h1{
         color: var(--hover-color);
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 500;
     }
     
     .german-flag img{
-        height: 70px;
-        width: 70px;
+        height: 60px;
+        width: 60px;
         object-fit: contain;
+    }
+
+    .german-info h1{
+        text-align: center;
+    }
+    
+    .german-info p{
+       text-align: center;
     }
 }
