@@ -95,7 +95,6 @@ nav{
 .close-button{
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .close-button i{
@@ -615,6 +614,11 @@ footer h1{
         margin-left: 110px;
         margin-bottom: 30px;
         
+    }
+    .close-button{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
     }
 }
 
