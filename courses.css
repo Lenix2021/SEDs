@@ -80,7 +80,6 @@ nav{
 .close-button{
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .close-button i{
@@ -359,11 +358,24 @@ section{
     background: var(--bg-color);
 }
 
-.german-lessons h1{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
+.german-lesons-head {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.german-lesons-head h1{
     color: var(--hover-color);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.german-flag img{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
 }
 
 .german-lessons p{
@@ -463,5 +475,16 @@ footer h1{
         width: 100%;
         margin-left:0;
         text-align: center;
+    }
+    .german-lesons-head h1{
+        color: var(--hover-color);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .german-flag img{
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
     }
 }

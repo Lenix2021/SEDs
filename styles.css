@@ -537,6 +537,7 @@ footer h1{
         font-size: 30px;
         font-weight: 600px;
         color: var(--text-color);
+        margin-left: -0px;
     }
     .left-side p{
         color: var(--text-color);
@@ -580,11 +581,13 @@ footer h1{
     }
     .image{
         margin-top: -150px;
+        margin-left: 10px;
     }
     .image img{
-        width: 410px;
+        width: 380px;
         height:500px;
         object-fit: contain;
+        margin-left: 5px;
     }
     .reviews .container {
         width: 100%;
