@@ -411,11 +411,13 @@ section{
     margin-top: 7px;
     font-size: 25px;
     color: var(--hover-color);
+    text-align: center;
 }
 
 .german-info p{
     font-size: 15px;
     color: var(--hover-color);
+    text-align: center;
 }
 
 .german-image img{
@@ -424,10 +426,58 @@ section{
     object-fit: contain;
 }
 
+/*/////////////////////////styles for the career paths//////////////////*/
+.career-paths{
+    background: var(--secon-bg-color);
+}
+
+.paths{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.path-item h2{
+    color: var(--hover-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.career-paths h1{
+    color: var(--hover-color);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stages-title p{
+    color: var(--hover-color);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.stages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.stage{
+    height: 300px;
+    width: 300px;
+    background: var(--bg-color);
+}
+
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--secon-bg-color);
+    background-color: var(--bg-color);
     height: 7vh;
     width: 100%;
     color: var(--hover-color);

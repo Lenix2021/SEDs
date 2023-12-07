@@ -591,8 +591,8 @@ footer h1{
     .reviews .container {
         width: 100%;
         overflow-x: auto;
-        margin: 0; /* Reset margin to remove any default margin */
-        scroll-snap-type: x mandatory; /* Enable horizontal snap scrolling */
+        margin: 0;
+        scroll-snap-type: x mandatory; 
     }
     .reviews .container {
         margin-bottom: 40px;
@@ -602,12 +602,12 @@ footer h1{
     }
     .container .item {
         flex: 0 0 100%;
-        margin-right: 0; /* Reset margin for smaller screens */
-        margin-bottom: 10px; /* Add space between items on smaller screens if needed */
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 
     .item .images img {
-        margin-left: 100px; /* Reset margin for smaller screens */
+        margin-left: 100px;
     }
     .about-text .btn{
         display: flex;
