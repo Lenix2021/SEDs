@@ -393,7 +393,7 @@ section{
 }
 
 .germanlessons{
-    height: 450px;
+    height: 350px;
     width: 400px;
     display: flex;
     justify-content: flex-start;
@@ -404,6 +404,11 @@ section{
     border-bottom: 5px solid #12f7ff;
     border-top: 5px solid #12f7ff;
     margin-bottom: 20px;
+}
+
+.germanlessons:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
 }
 
 .german-info h1{
@@ -429,6 +434,8 @@ section{
 /*/////////////////////////styles for the career paths//////////////////*/
 .career-paths{
     background: var(--secon-bg-color);
+    padding:10px 1%;
+
 }
 
 .paths{
@@ -460,6 +467,7 @@ section{
 }
 
 .stages{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,8 +478,39 @@ section{
 
 .stage{
     height: 300px;
-    width: 300px;
+    width: 400px;
     background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-bottom: 5px solid #12f7ff;
+    border-top: 5px solid #12f7ff;
+}
+
+.stage:hover{
+    transform: translateY(-.7rem);
+    transition: 2ms;
+}
+
+.stage h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.stage h2{
+    font-size: 20px;
+}
+
+.stage h1,h2{
+    text-align: center;
+    padding: 5px;
+    color: var(--hover-color);
+}
+
+.stage p{
+    color: var(--hover-color);
+    text-align: center;
 }
 
 /* /////////////////////footer styling//////////////////////////*/
