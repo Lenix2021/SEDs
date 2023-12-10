@@ -145,6 +145,11 @@ body{
     border-radius: 10px;
 }
 
+.gallery img:hover{
+    transform: scale(1.2);
+    border-radius: 20px;
+    transition: 0.5s;
+}
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
