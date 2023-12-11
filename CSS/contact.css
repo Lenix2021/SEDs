@@ -21,6 +21,11 @@
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
 }
+/* ///////////////////////// definig the nav styles /////////////////*/
+
+body{
+    background: var(--bg-color);
+}
 
 /* ///////////////////////// definig the nav styles /////////////////*/
 nav{
@@ -121,18 +126,26 @@ section{
     padding:10px 5%;
 }
 
-#talk{
-    margin-top: 50px;
+.talk{
+    margin-top: 100px;
+}
+
+.talk h1{
+    color: var(--hover-color);
 }
 #map{
     height: 400px;
     width: 100%;
 }
 
+.maps{
+    min-height: 100vh;
+}
+
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--bg-color);
+    background-color: var(--secon-bg-color);
     height: 7vh;
     width: 100%;
     color: var(--hover-color);

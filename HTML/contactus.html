@@ -48,59 +48,62 @@
         </div>
     </div>
 
-    <section class="map">
+    <section class="maps">
         <div class="talk">
             <h1>Location Of Main Office</h1>
             <a href="https://www.google.com/maps/place/Hope+Village+Hotel/@6.594726,0.435492,15z/data=!4m6!3m5!1s0x10273bd40371462d:0xa7b585137a1e0e60!8m2!3d6.5945661!4d0.4355079!16s%2Fg%2F11j4r17wqt?hl=en&entry=ttu">VIEW LAGER</a>
         </div>
         <div id="map"></div>
     </section>
-    <a href="https://www.google.com/maps/place/Hope+Village+Hotel/@6.594726,0.435492,15z/data=!4m6!3m5!1s0x10273bd40371462d:0xa7b585137a1e0e60!8m2!3d6.5945661!4d0.4355079!16s%2Fg%2F11j4r17wqt?hl=en&entry=ttu">VIEW LAGER</a>
+    <footer>
+        <h1>coppyright@2019</h1>
+    </footer>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb_HIGj5J7CdvRVDouWgZMwnz_BAjpM5U&callback=initMap">
 </script>
    <script>
 let map;
 
-function initMap() {
-    // Map options
-    var options = {
-        zoom: 8,
-        center: {lat:6.603963776813299,lng:0.4758715533308993}   
-    };
-    var map = new google.maps.Map(document.getElementById("map"), options);
-
-    var marker = new google.maps.Marker({
-        position: { lat: 6.594584411582559, lng: 0.4355105779483452 },
-        map: map
-    });
-}
 // function initMap() {
 //     // Map options
 //     var options = {
 //         zoom: 8,
-//         center: { lat: 6.608058622735243, lng: 0.476755817898074 }
+//         center: {lat:6.603963776813299,lng:0.4758715533308993}   
 //     };
-
-//     // Create a new map
 //     var map = new google.maps.Map(document.getElementById("map"), options);
 
-//     // Create a marker
 //     var marker = new google.maps.Marker({
 //         position: { lat: 6.594584411582559, lng: 0.4355105779483452 },
 //         map: map
 //     });
-
-//     // Add an info window to the marker
-//     var infowindow = new google.maps.InfoWindow({
-//         content: '<div><img src="path/to/your/image.jpg" alt="Location Image" style="width: 100%; max-width: 200px;"><p>This is the location description.</p><a href="https://maps.google.com/?q=6.594584411582559,0.4355105779483452" target="_blank">View on Google Maps</a></div>'
-//     });
-
-//     // Open the info window when the marker is clicked
-//     marker.addListener('click', function () {
-//         infowindow.open(map, marker);
-//     });
 // }
+function initMap() {
+    // Map options
+    var options = {
+        zoom: 8,
+        center: { lat: 6.608058622735243, lng: 0.476755817898074 }
+    };
+
+    // Create a new map
+    var map = new google.maps.Map(document.getElementById("map"), options);
+
+    // Create a marker
+    var marker = new google.maps.Marker({
+        position: { lat: 6.594584411582559, lng: 0.4355105779483452 },
+        map: map
+    });
+
+    // Add an info window to the marker
+    var infowindow = new google.maps.InfoWindow({
+        content: '<a href="https://www.google.com/maps/place/Hope+Village+Hotel/@6.594726,0.435492,15z/data=!4m6!3m5!1s0x10273bd40371462d:0xa7b585137a1e0e60!8m2!3d6.5945661!4d0.4355079!16s%2Fg%2F11j4r17wqt?hl=en&entry=ttu">VIEW LAGER</a>'
+    });
+
+    // Open the info window when the marker is clicked
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+}
+
    </script>
    <script src="/JS/courses.js"></script>
 </body>
