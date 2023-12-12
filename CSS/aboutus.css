@@ -159,16 +159,33 @@ section{
 }
 
 
-.box11{
+.box11 {
     min-height: 350px;
     width: 300px;
-    background:var(--secon-bg-color);
+    background: var(--secon-bg-color);
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     color: var(--hover-color);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.box11:nth-child(1) {
+    transition-delay: 3s;
+}
+
+.box11:nth-child(2) {
+    transition-delay: 4s;
+}
+
+.box11:nth-child(3) {
+    transition-delay: 5s;
+}
+
+.appear {
+    opacity: 1;
 }
 
 .box11 .header-about h1{
@@ -233,6 +250,23 @@ section{
     align-items: center;
     flex-direction: column;
     position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.offer1:nth-child(1) {
+    transition-delay: 1s;
+}
+
+.offer1:nth-child(2) {
+    transition-delay: 1.5s;
+}
+
+.offer1:nth-child(3) {
+    transition-delay: 2s;
+}
+
+.offer1.appear {
+    opacity: 1;
 }
 
 .offer-img{
@@ -317,5 +351,16 @@ footer h1{
     }
     #menu-icon{
         visibility: visible;
+    }
+    .offer1:nth-child(1) {
+        transition-delay: 1s;
+    }
+    
+    .offer1:nth-child(2) {
+        transition-delay: 1s;
+    }
+    
+    .offer1:nth-child(3) {
+        transition-delay: 1s;
     }
 }

@@ -72,6 +72,7 @@ nav{
     width:100%;
     background: var(--hover-color);
     visibility: hidden;
+    transition: all .4s ease;
 }
 
 #menu-icon{
@@ -169,6 +170,8 @@ nav{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    transition: all 3s linear;
+    transition-delay: 0.3s;
 }
 
 .contents h1{
@@ -177,6 +180,7 @@ nav{
     color: var(--text-color);
     padding-top: 10px;
     margin-left: 50px;
+   
 }
 
 .change-text{
@@ -283,6 +287,7 @@ nav{
     color: var(--text-color);
     margin-top: 70px;
     text-align: left;
+    
 }
 
 .about-text h1{

@@ -213,15 +213,6 @@ section{
     
 }
 
-.programs{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-    flex-wrap: wrap;
-}
-
 .ms h2{
     display: flex;
     align-items: center;
@@ -229,6 +220,16 @@ section{
     color:var(--hover-color);
     font-size: 30px;
     font-weight: 500;
+}
+
+
+.programs{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
 }
 
 .program1{
@@ -243,6 +244,24 @@ section{
     margin-bottom: 60px;
     border-bottom: 5px solid #12f7ff;
     border-top: 5px solid #12f7ff;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.program1.appear {
+    opacity: 1;
+}
+
+.program1:nth-child(1) {
+    transition-delay: 1s;
+}
+
+.program1:nth-child(2) {
+    transition-delay: 1.5s;
+}
+
+.program1:nth-child(3) {
+    transition-delay: 2s;
 }
 
 .program1:hover{
@@ -318,6 +337,33 @@ section{
     border-radius: 10px;
     border-bottom: 5px solid #F5F5F5;
     border-top: 5px solid var(--hover-color);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.others1.appear {
+    opacity: 1;
+}
+
+.others1:nth-child(1) {
+    transition-delay: 1s;
+}
+
+.others1:nth-child(2) {
+    transition-delay: 1.5s;
+}
+
+.others1:nth-child(3) {
+    transition-delay: 2s;
+}
+.others1:nth-child(4) {
+    transition-delay: 1s;
+}
+.others1:nth-child(5) {
+    transition-delay: 1.5s;
+}
+.others1:nth-child(6) {
+    transition-delay: 2s;
 }
 
 .others1:hover{
@@ -583,5 +629,31 @@ footer h1{
     
     .german-info p{
        text-align: center;
+    }
+    .others1:nth-child(1) {
+        transition-delay: 1s;
+    }
+    
+    .others1:nth-child(2) {
+        transition-delay: 1s;
+    }
+    
+    .others1:nth-child(3) {
+        transition-delay: 1s;
+    }
+    .others1:nth-child(4) {
+        transition-delay: 1s;
+    }
+    .others1:nth-child(5) {
+        transition-delay: 1s;
+    }
+    .others1:nth-child(6) {
+        transition-delay: 1s;
+    }
+    .stage{
+        flex-direction: column;
+    }
+    .stage:nth-child(1){
+        height: 360px;
     }
 }
