@@ -20,6 +20,10 @@
     --bg-color:#250821;
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+    --nav:#FFD700;
+    --text:#ffefce;
+    --nav-background:#0f2a3d;
+    --third-background:#050f17;
 }
 
 /* ///////////////////////// definig the nav styles /////////////////*/
@@ -27,7 +31,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--bg-color);
+    background: var(--nav-background);
     margin-top: 0;
     height: 60px;
     position: fixed;
@@ -37,7 +41,7 @@ nav{
 }
 
 .head{
-    color: var(--hover-color);
+    color: var(--nav);
     font-weight: 50;
     font-size: 15px;
 }
@@ -59,15 +63,20 @@ nav{
     z-index: 3001;
     height:150px;
     width:100%;
-    background: var(--hover-color);
+    background: var(--nav-background);
     top: 0;
+    transition: all ease linear 0.2s;
     visibility: hidden;
 }
 
 #menu-icon{
     font-size: 30px;
-    color: var(--hover-color);
+    color: var(--text);
     visibility: hidden;
+}
+
+#menu-icon:hover{
+    cursor: pointer;
 }
 
 .menu-items{
@@ -91,7 +100,7 @@ nav{
 }
 
 .menu-items .back a{
-    color: var(--bg-color);
+    color: var(--text);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -100,13 +109,13 @@ nav{
 
 .navs a{
     text-decoration: none;
-    color: var(--hover-color);
+    color: var(--text);
     font-weight: 200px;
     font-size: large;
 }
 
 .navs a:hover{
-    color: var(--hover-color);
+    color: var(--nav);
     text-shadow:0 0 10px rgba(18,247,255,0.6),
     0 0 20px rgba(18,247,255,0.6),
     0 0 30px rgba(18,247,255,0.6),
@@ -153,10 +162,10 @@ body{
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--bg-color);
+    background-color: var(--nav-background);
     height: 7vh;
     width: 100%;
-    color: var(--hover-color);
+    color: var(--nav);
 }
 
 footer h1{

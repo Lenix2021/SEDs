@@ -20,11 +20,12 @@
     --bg-color:#250821;
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+    --nav:#FFD700;
 }
-
+/* 
 body{
     background: var(--bg-color);
-}
+} */
 
 /* ///////////////////////// definig the nav styles /////////////////*/
 nav{
@@ -32,7 +33,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--secon-bg-color);
+    background:#0f2a3d;
     margin-top: 0;
     height: 60px;
     position: fixed;
@@ -51,7 +52,7 @@ nav{
 
 #menu-icon{
     font-size: 30px;
-    color: var(--hover-color);
+    color: #ffefce;
     visibility: hidden;
 }
 
@@ -85,7 +86,7 @@ nav{
 
 
 .head{
-    color: var(--hover-color);
+    color: var(--nav);
     font-weight: 50;
     font-size: 15px;
 }
@@ -104,13 +105,13 @@ nav{
 
 .navs a{
     text-decoration: none;
-    color: var(--hover-color);
+    color:#ffefce;
     font-weight: 200px;
     font-size: large;
 }
 
 .navs a:hover{
-    color: var(--hover-color);
+    color: var(--nav);
     text-shadow:0 0 10px rgba(18,247,255,0.6),
     0 0 20px rgba(18,247,255,0.6),
     0 0 30px rgba(18,247,255,0.6),
@@ -127,6 +128,7 @@ section{
 .aboutUs{
     height: 100%;
     min-height: 90vh;
+    background-color:#050f17;
 }
 
 .about-us-text{
@@ -138,12 +140,12 @@ section{
 }
 
 .about-us-text h1{
-    color: var(--hover-color);
+    color:#ffefce;
 }
 
 .about-us-text p{
     text-align: center;
-    color: var(--hover-color);
+    color:#ffefce;
 }
 
 .box{
@@ -162,7 +164,7 @@ section{
 .box11 {
     min-height: 350px;
     width: 300px;
-    background: var(--secon-bg-color);
+    background:#0f2a3d;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
@@ -191,20 +193,20 @@ section{
 .box11 .header-about h1{
     text-align: center;
     margin: 10px;
-    color:#fdfdfd;
+    color:#ffefce;
 }
 
 .box11 .statements p{
     margin: 0.5rem 0 1rem 0;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #bdbdbd;
+    color:#ffefce;
     line-height: 1.6;
     text-align: center;
 }
 
 .box11 span{
-    color:#fdfdfd;
+    color:var(--nav);
     font-size: 3rem;
 
 }
@@ -221,14 +223,10 @@ section{
     background: var(--secon-bg-color);
 }
 
-.what-we-offer h4{
-    text-align: center;
-    color: #fdfdfd;
-}
 
 .what-we-offer h1{
     text-align: center;
-    color: var(--hover-color);
+    color: #ffefce;
 }
 
 .offer{
@@ -285,8 +283,9 @@ section{
 .offer h1{
     text-align: center;
     margin: 10px;
-    color:#fdfdfd;
+    color:#ffefce;
     font-size: 20px;
+    font-weight: 400;
 }
 
 .offer p{
@@ -307,7 +306,7 @@ section{
 .ref{
     margin-top: 1px;
     width: 150px;
-    background-color: var(--hover-color);
+    background-color: goldenrod;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -320,7 +319,7 @@ section{
 
  .ref a{
     text-decoration: none;
-    color:var(--bg-color);
+    color:black;
     font-weight: 700;
 }
 
@@ -332,10 +331,10 @@ section{
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--bg-color);
+    background-color:#0f2a3d;
     height: 7vh;
     width: 100%;
-    color: var(--hover-color);
+    color:var(--nav);
 }
 
 footer h1{

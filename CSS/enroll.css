@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,200;1,700&display=swap');
+
+/* ///////////////////////// definig the boddy property /////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    
+}
+
+:root{
+    --big-font:2.0rem;
+    --background-color:#0F2A3D;
+    --text-color:#0F2A3D;
+    --seccond-bg:#B64638;
+    --whitesmoke-col:#F5F5F5;
+    --hover-color:#12f7ff;
+    --bg-color:#250821;
+    --secon-bg-color:#292e33;
+    --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+    --nav:#FFD700;
+    --text:#ffefce;
+    --nav-background:#0f2a3d;
+    --third-background:#050f17;
+}
+/* ///////////////////////// definig the nav styles /////////////////*/
+
+body{
+    background: var(--third-background);
+}
+
+/* ///////////////////////// definig the nav styles /////////////////*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--nav-background);
+    margin-top: 0;
+    height: 60px;
+    position: fixed;
+    z-index: 300;
+    width: 100%;
+    top: 0;
+}
+
+.head{
+    color: var(--nav);
+    font-weight: 50;
+    font-size: 15px;
+}
+
+.navs ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navs li{
+   display: flex;
+}
+
+#menu-sidebar{
+    position: fixed;
+    z-index: 3001;
+    height:150px;
+    width:100%;
+    background: var(--nav-background);
+    top: 0;
+    visibility: hidden;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: var(--text);
+    visibility: hidden;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.close-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-button i{
+    font-size: 25px;
+    background: var(--bg-color);
+    color: var(--hover-color);
+    margin-right:10px;
+    border-radius:2px;
+}
+
+.menu-items .back a{
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.navs a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 200px;
+    font-size: large;
+}
+
+.navs a:hover{
+    color: var(--nav);
+    text-shadow:0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6);
+}
+/*///////////////// form us section for /////////////////////////////*/
+/* section{
+    padding:10px 35%;
+} */
+
+#enrollment-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #050f17;
+    flex-wrap: wrap;
+}
+
+.container{
+    background: whitesmoke;
+    width: 40%;
+    margin-top: 80px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.container .info{
+    background: var(--nav-background);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container .info h1{
+    text-align: center;
+    color: var(--text);
+}
+
+.personal-info h1{
+    text-align: left;
+    padding: 5px;
+    color: #050f17;
+}
+
+.fields1{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.fields1 label{
+    padding-right: 70px;
+    padding-left: 30px;
+    width: 250px;
+    color: #050f17;
+   font-weight: 600;
+    font-size: 15px; 
+}
+
+.personal-info span{
+    padding-right: 70px;
+    padding-left: 30px;
+    width: 250px;
+    color: #050f17;
+   font-weight: 700;
+    font-size: 16px; 
+}
+
+
+.fields1 input{
+    width: 45%;
+    justify-self: end;
+    outline: none;
+    border: none;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid #050f17;
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 15px
+}
+
+.fields2 input{
+    width: 45%;
+    justify-self: end;
+    outline: none;
+    border: none;
+    height: 27px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 15px;
+    background: whitesmoke;
+}
+
+.fields2{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.fields2 label{
+    padding-right: 70px;
+    padding-left: 30px;
+    width: 250px;
+    color: #050f17;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.form-button input[type="submit"]{
+    border: none;
+    width: 170px;
+    height: 40px;
+    background: var(--nav);
+    color: #050f17;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+
+}
+
+
+/* /////////////////////footer styling//////////////////////////*/
+
+footer{
+    background-color: var(--nav-background);
+    height: 7vh;
+    width: 100%;
+    color: var(--nav);
+}
+
+footer h1{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+@media screen and (max-width:960px) {
+
+    .navs{
+        display: none;
+    }
+    #menu-icon{
+        visibility: visible;
+    }
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+    /* #enrollment-form{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } */
+    .container{
+        background: whitesmoke;
+        width: 90%;
+        margin-top: 80px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+}

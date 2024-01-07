@@ -20,11 +20,15 @@
     --bg-color:#250821;
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+    --nav:#FFD700;
+    --text:#ffefce;
+    --nav-background:#0f2a3d;
+    --third-background:#050f17;
 }
 /* ///////////////////////// definig the nav styles /////////////////*/
 
 body{
-    background: var(--bg-color);
+    background: var(--third-background);
 }
 
 /* ///////////////////////// definig the nav styles /////////////////*/
@@ -32,7 +36,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--secon-bg-color);
+    background: var(--nav-background);
     margin-top: 0;
     height: 60px;
     position: fixed;
@@ -42,7 +46,7 @@ nav{
 }
 
 .head{
-    color: var(--hover-color);
+    color: var(--nav);
     font-weight: 50;
     font-size: 15px;
 }
@@ -64,14 +68,14 @@ nav{
     z-index: 3001;
     height:150px;
     width:100%;
-    background: var(--hover-color);
+    background: var(--nav-background);
     top: 0;
     visibility: hidden;
 }
 
 #menu-icon{
     font-size: 30px;
-    color: var(--hover-color);
+    color: var(--text);
     visibility: hidden;
 }
 
@@ -96,7 +100,7 @@ nav{
 }
 
 .menu-items .back a{
-    color: var(--bg-color);
+    color: var(--text);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -105,13 +109,13 @@ nav{
 
 .navs a{
     text-decoration: none;
-    color: var(--hover-color);
+    color: var(--text);
     font-weight: 200px;
     font-size: large;
 }
 
 .navs a:hover{
-    color: var(--hover-color);
+    color: var(--nav);
     text-shadow:0 0 10px rgba(18,247,255,0.6),
     0 0 20px rgba(18,247,255,0.6),
     0 0 30px rgba(18,247,255,0.6),
@@ -135,20 +139,106 @@ section{
 }
 #map{
     height: 400px;
-    width: 100%;
+    width: 60%;
 }
 
 .maps{
     min-height: 100vh;
 }
 
+.maps-details{
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.maps h2{
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.contents-for-left{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contents-for-left .conts{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.conts span{
+    padding-right: 30px;
+    font-size: 40px;
+    color: var(--nav);
+}
+.conts h1{
+    color: var(--text);
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.social-media-links{
+    margin-top: 60px;
+}
+
+.social-media-links h1{
+    color: var(--text);
+    font-weight: 400;
+}
+
+.media{
+    display: flex;
+    gap: 1em;
+}
+
+.whatsapp-button i{
+    color: var(--nav);
+    font-size: 52px;
+    margin-top: 13px;
+}
+
+.whatsapp-button-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp-button-container span{
+    position: absolute;
+   color: var(--hover-color);
+   margin-right: 40px;
+   transform:rotate(20deg)translateX(10px);
+   opacity:0;
+}
+
+.whatsapp-button-container:hover .whatsapp-button i {
+    transform: rotate(0deg) translateX(0px);
+}
+
+.whatsapp-button-container:hover .whatsapp-button span {
+    transform: rotate(20deg) translateX(10px);
+    opacity: 1;
+    transition: all 400ms;
+}
+
+
+
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--secon-bg-color);
+    background-color: var(--nav-background);
     height: 7vh;
     width: 100%;
-    color: var(--hover-color);
+    color: var(--nav);
 }
 
 footer h1{
@@ -164,5 +254,9 @@ footer h1{
     }
     #menu-icon{
         visibility: visible;
+    }
+    #map{
+        height: 400px;
+        width: 100%;
     }
 }

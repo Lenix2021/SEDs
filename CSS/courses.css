@@ -20,6 +20,10 @@
     --bg-color:#250821;
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
+    --nav:#FFD700;
+    --text:#ffefce;
+    --nav-background:#0f2a3d;
+    --third-background:#050f17;
 }
 
 /* ///////////////////////// definig the nav styles /////////////////*/
@@ -27,7 +31,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: var(--secon-bg-color);
+    background: var(--nav-background);
     margin-top: 0;
     height: 60px;
     position: fixed;
@@ -37,7 +41,7 @@ nav{
 }
 
 .head{
-    color: var(--hover-color);
+    color: var(--nav);
     font-weight: 50;
     font-size: 15px;
 }
@@ -59,14 +63,14 @@ nav{
     z-index: 3001;
     height:150px;
     width:100%;
-    background: var(--hover-color);
+    background: var(--nav-background);
     top: 0;
     visibility: hidden;
 }
 
 #menu-icon{
     font-size: 30px;
-    color: var(--hover-color);
+    color: var(--text);
     visibility: hidden;
 }
 
@@ -91,7 +95,7 @@ nav{
 }
 
 .menu-items .back a{
-    color: var(--bg-color);
+    color: var(--text);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -100,13 +104,13 @@ nav{
 
 .navs a{
     text-decoration: none;
-    color: var(--hover-color);
+    color: var(--text);
     font-weight: 200px;
     font-size: large;
 }
 
 .navs a:hover{
-    color: var(--hover-color);
+    color: var(--nav);
     text-shadow:0 0 10px rgba(18,247,255,0.6),
     0 0 20px rgba(18,247,255,0.6),
     0 0 30px rgba(18,247,255,0.6),
@@ -122,15 +126,16 @@ section{
 }
 
 .talk{
-    min-height: 80vh;
+    padding:5px 5%;
+    min-height: 75vh;
     background: var(--bg-color);
     width: 100%;
 }
 
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 5em;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -139,52 +144,49 @@ section{
 .first-part{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    margin-top: 100px;
+    /* background:rgb(214, 210, 210) ;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10%; */
 }
 
 .first-part h1{
-    color: var(--hover-color);
+    color: var(--text);
     font-size: 40px;
 }
 
 .first-part p{
-    color:var(--hover-color);
+    color:var(--text);
     font-size: 15px;
 }
 
 .seccond-part{
     min-height: 400px;
     width: 400px;
-    background: var(--secon-bg-color);
-    margin-top: 60px;
-    border-radius: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
-    border-bottom: 8px solid var(--hover-color);
-    border-top:8px solid var(--hover-color);
+    /* background: var(--secon-bg-color); */
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .seccond-part img{
-    height: 300px;
-    width: 400px;
+    width: 650px;
     margin-top: 20px;
-    position: absolute;
-    top: 0;
-    right:0;
+    object-fit: contain;
 }
 
 /*///////////////// About us section for /////////////////////////////*/
 
-.software-engieneering{
+#software-engieneering{
     min-height: 200vh;
-    background: var(--secon-bg-color);
+    background: #050f17;
     width: 100%;
 }
 
 .soft-text h2{
     font-size: 30px;
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
 }
 
@@ -193,12 +195,12 @@ section{
     justify-content: center;
     align-items: center;
     gap: 2em;
-    border-bottom: 2px solid #F5F5F5;
+    border-bottom: 2px solid goldenrod;
     flex-wrap: wrap;
 }
 
 .message {
-    color: #12f7ff;
+    color: var(--text);
     width: 50%;
 }
 
@@ -217,7 +219,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:var(--hover-color);
+    color:var(--text);
     font-size: 30px;
     font-weight: 500;
 }
@@ -230,20 +232,21 @@ section{
     align-items: center;
     gap: 3em;
     flex-wrap: wrap;
+    border-bottom: 2px solid goldenrod;
 }
 
 .program1{
     width: 300px;
-    height: 300px;
-    background:var(--bg-color);
+    height: 330px;
+    background:var(--bg-color); 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 60px;
-    border-bottom: 5px solid #12f7ff;
-    border-top: 5px solid #12f7ff;
+    border-bottom: 10px solid goldenrod;
+    border-top: 10px solid goldenrod;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -287,7 +290,7 @@ section{
 }
 
 .info h1{
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
     font-size: 20px;
     padding: 10px;
@@ -296,7 +299,7 @@ section{
 }
 
 .info p{
-    color:var(--hover-color);
+    color:var(--text);
     text-align: center;
     font-size: 17px;
     font-weight: 400;
@@ -306,15 +309,15 @@ section{
 
 .other-side-attraction .intro-text h1{
     text-align: center;
-    color: var(--hover-color);
+    color: var(--text);
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .other-side-attraction .intro-text p{
-    color: #12f7ff;
+    color: var(--text);
     font-size: 15px;
     font-weight: 400;
     width: 70%;
@@ -328,15 +331,16 @@ section{
     margin-top: 40px;
     flex-wrap: wrap;
     gap: 3em;
-   
+    margin-bottom: 60px;
+    border-bottom: 2px solid goldenrod;
 }
 .others1{
     height: 360px;
     width: 300px;
-    background: var(--bg-color);
+    background: var(--bg-color); 
     border-radius: 10px;
-    border-bottom: 5px solid #F5F5F5;
-    border-top: 5px solid var(--hover-color);
+    border-bottom: 5px solid goldenrod;
+    border-top: 5px solid goldenrod;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -358,12 +362,15 @@ section{
 }
 .others1:nth-child(4) {
     transition-delay: 1s;
+    margin-bottom: 60px;
 }
 .others1:nth-child(5) {
     transition-delay: 1.5s;
+    margin-bottom: 60px;
 }
 .others1:nth-child(6) {
     transition-delay: 2s;
+    margin-bottom: 60px;
 }
 
 .others1:hover{
@@ -384,7 +391,7 @@ section{
 }
 
 .others1 h1{
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
     font-size: 20px;
     padding: 10px;
@@ -392,7 +399,7 @@ section{
 }
 
 .others1 p{
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
     font-size: 15px;
     font-weight: 400;
@@ -400,7 +407,7 @@ section{
 
 /* /////////////////////german lessons styling styling//////////////////////////*/
 
-.german-lessons{
+#german-lessons{
     background: var(--bg-color);
 }
 
@@ -413,7 +420,7 @@ section{
 }
 
 .german-lesons-head h1{
-    color: var(--hover-color);
+    color: var(--text);
     font-size: 30px;
     font-weight: 400;
 }
@@ -424,9 +431,9 @@ section{
     object-fit: contain;
 }
 
-.german-lessons p{
+#german-lessons p{
     text-align: center;
-    color:#12f7ff;
+    color:var(--text);
     margin-bottom: 20px;
 }
 
@@ -447,8 +454,8 @@ section{
     flex-direction: column;
     background:var(--secon-bg-color);
     border-radius: 10px;
-    border-bottom: 5px solid #12f7ff;
-    border-top: 5px solid #12f7ff;
+    border-bottom: 5px solid goldenrod;
+    border-top: 5px solid goldenrod;
     margin-bottom: 20px;
 }
 
@@ -461,13 +468,13 @@ section{
     margin-bottom: 7px;
     margin-top: 7px;
     font-size: 25px;
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
 }
 
 .german-info p{
     font-size: 15px;
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
 }
 
@@ -479,7 +486,7 @@ section{
 
 /*/////////////////////////styles for the career paths//////////////////*/
 .career-paths{
-    background: var(--secon-bg-color);
+    background:  #050f17;
     padding:10px 1%;
 
 }
@@ -493,45 +500,68 @@ section{
     margin-bottom: 10px;
 }
 .path-item h2{
-    color: var(--hover-color);
+    color: var(--text);
     font-size: 18px;
     font-weight: 400;
 }
 
 .career-paths h1{
-    color: var(--hover-color);
+    color: var(--text);
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 10px;
 }
 
+.stages-title{
+    margin-top: 20px;
+}
+
+.stages-title h1{
+    color: var(--nav);
+}
+
 .stages-title p{
-    color: var(--hover-color);
+    color: var(--text);
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .stages{
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    
 }
 
 .stage{
     height: 300px;
     width: 400px;
-    background: var(--bg-color);
+    /* background: rgb(214, 210, 210); */
+    background: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
-    border-bottom: 5px solid #12f7ff;
-    border-top: 5px solid #12f7ff;
+    /* border-bottom: 5px solid goldenrod ;
+    border-top: 5px solid goldenrod; */
+}
+
+
+.stage:nth-child(1){
+    background:whitesmoke;
+}
+
+.stage:nth-child(2){
+    background:whitesmoke;
+}
+
+.stage:nth-child(3){
+    background:whitesmoke;
 }
 
 .stage:hover{
@@ -541,7 +571,8 @@ section{
 
 .stage h1{
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 800;
+    color: var(--nav-background);
 }
 
 .stage h2{
@@ -551,21 +582,21 @@ section{
 .stage h1,h2{
     text-align: center;
     padding: 5px;
-    color: var(--hover-color);
+    color: var(--third-background);
 }
 
 .stage p{
-    color: var(--hover-color);
+    color: var(--third-background);
     text-align: center;
 }
 
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
-    background-color: var(--bg-color);
+    background-color: var(--nav-background);
     height: 7vh;
     width: 100%;
-    color: var(--hover-color);
+    color: var(--nav);
 }
 
 footer h1{
@@ -655,5 +686,21 @@ footer h1{
     }
     .stage:nth-child(1){
         height: 360px;
+    }
+    .container{
+        margin-top:50px;
+    }
+    .seccond-part img{
+        width: 360px;
+    }
+    #software-engieneering{
+        margin-top: -90px;
+    }
+    .germanlessons{
+        height: 370px;
+    }
+    .programs{
+       gap: 0.5em;
+       flex-direction: column;
     }
 }
