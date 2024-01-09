@@ -21,6 +21,9 @@
     --secon-bg-color:#292e33;
     --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
     --nav:#FFD700;
+    --text:#ffefce;
+    --nav-background:#0f2a3d;
+    --third-background:#050f17;
 }
 /* 
 body{
@@ -46,7 +49,7 @@ nav{
     z-index: 3001;
     height:150px;
     width:100%;
-    background: var(--hover-color);
+    background: var(--nav-background);
     visibility: hidden;
 }
 
@@ -78,7 +81,7 @@ nav{
 }
 
 .menu-items .back a{
-    color: var(--bg-color);
+    color: var(--text);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -129,6 +132,10 @@ section{
     height: 100%;
     min-height: 90vh;
     background-color:#050f17;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 200;
 }
 
 .about-us-text{
@@ -328,6 +335,94 @@ section{
     transition: 2ms;
 }
 
+.special-franko{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.frankofo-button input{
+    width: 110%;
+    height: 40px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: goldenrod;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#popup{
+    position: fixed;
+    width: 45%;
+    height: 40vh;
+    top:40%;
+    left: 50%;
+    z-index: 3007;
+    background:white;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+
+.close-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    color: goldenrod;
+    text-align: center;
+}
+
+.close-display h1:hover{
+    cursor: pointer;
+}
+
+.popup-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.popup-message p{
+    text-align: center;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: all ease ;
+    background:rgb(217, 209, 209);
+    z-index: 299;
+    position: fixed;
+}
+
+.arrow{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.arrow a{
+    color: goldenrod;
+}
+
+.arrow a i{
+    font-size: 40px;
+}
+
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
@@ -361,5 +456,10 @@ footer h1{
     
     .offer1:nth-child(3) {
         transition-delay: 1s;
+    }
+    #popup{
+        margin-top: 40px;
+        height: 60vh;
+        width: 50%;
     }
 }

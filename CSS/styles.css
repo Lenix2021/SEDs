@@ -497,6 +497,20 @@ nav{
     transition: 2ms;
 }
 
+.arrow{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.arrow a{
+    color: goldenrod;
+}
+
+.arrow a i{
+    font-size: 40px;
+}
+
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{

@@ -37,3 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(offer);
     });
 });
+
+var franko=document.getElementById("franko");
+var close_popup=document.getElementById("close-popup")
+
+franko.addEventListener("click",()=>{
+    var pop= document.getElementById("popup");
+    pop.style.visibility="visible";
+   let overlay=document.createElement("div");
+   overlay.classList.add("overlay");
+   document.body.appendChild(overlay)
+   overlay.style.pointerEvents = "auto";
+})
+
+close_popup.addEventListener("click",()=>{
+    var pop=document.getElementById("popup");
+    pop.style.visibility="hidden"
+    const over=document.querySelector(".overlay")
+    document.querySelector("body").removeChild(over)
+})

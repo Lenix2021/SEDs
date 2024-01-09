@@ -159,6 +159,20 @@ body{
     border-radius: 20px;
     transition: 0.5s;
 }
+
+.arrow{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.arrow a{
+    color: goldenrod;
+}
+
+.arrow a i{
+    font-size: 40px;
+}
 /* /////////////////////footer styling//////////////////////////*/
 
 footer{
