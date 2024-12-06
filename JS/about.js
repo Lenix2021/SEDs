@@ -44,6 +44,7 @@ var close_popup=document.getElementById("close-popup")
 franko.addEventListener("click",()=>{
     var pop= document.getElementById("popup");
     pop.style.visibility="visible";
+    pop.style.transition="2s";
    let overlay=document.createElement("div");
    overlay.classList.add("overlay");
    document.body.appendChild(overlay)

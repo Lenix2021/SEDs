@@ -152,8 +152,8 @@ nav{
     height: 100%;
     width: 100%;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content:flex-start;
+    align-items:flex-start;
     gap: 4em;
     background-color:#050f17;
     flex-wrap: wrap;
@@ -177,8 +177,8 @@ nav{
 .contents{
     margin-left: 60px;
     background: whitesmoke;
-    height: 320px;
-    width: 420px;
+    height: 220px;
+    width:500px;
     align-items: center;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -186,6 +186,7 @@ nav{
     border-bottom-right-radius: 60px;
     transition: all 3s linear;
     transition-delay: 0.3s;
+    margin-top: 150px;
 }
 
 .contents h1{
@@ -209,6 +210,9 @@ nav{
     vertical-align: top;
     color: var(--text-color);
     font-weight: 800;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .change-text h3 .word{
@@ -238,6 +242,7 @@ nav{
     color: var(--text-color);
     font-size: 15px;
     padding-left: 10px;
+    padding-top: 40px;
 }
 
 .ref{
@@ -249,7 +254,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-left: 70px;
+    margin-left: 150px;
     
 }
 
@@ -449,7 +454,7 @@ nav{
     display: flex;
     overflow-x: scroll;
     padding: 24px;
-    width: 1090px;
+    width: 1290px;
     height: 380px;
     scroll-snap-type: mandatory;
     scroll-padding: 24px;

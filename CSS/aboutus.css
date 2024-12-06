@@ -358,8 +358,8 @@ section{
 
 #popup{
     position: fixed;
-    width: 45%;
-    height: 40vh;
+    width: 40%;
+    height: 45vh;
     top:40%;
     left: 50%;
     z-index: 3007;
@@ -375,7 +375,7 @@ section{
     align-items: flex-end;
     padding-right: 10px;
     flex-wrap: wrap;
-    color: goldenrod;
+    color: var(--background-color);
     text-align: center;
 }
 
@@ -395,6 +395,7 @@ section{
 
 .popup-message h1{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .popup-message p{
