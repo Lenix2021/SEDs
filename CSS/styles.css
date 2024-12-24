@@ -564,7 +564,7 @@ footer h1{
     
     .contents{
         margin-top: 70px;
-        height: 200px;
+        height: 227px;
         width: 350px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
@@ -588,7 +588,7 @@ footer h1{
     }
     .ref{
         margin-top: 15px;
-        margin-left: 80px;
+        margin-left: 90px;
     }
     .left-side p{
         color: var(--text-color);
