@@ -36,7 +36,7 @@ words[currentwordindex].style.opacity="1";
     currentwordindex=currentwordindex === maxwordsindex ? 0 : currentwordindex + 1;
 }
  changetext()
- setInterval(changetext,3000)
+ setInterval(changetext,6000)
  
  let sidebar = document.getElementById("menu-icon");
 

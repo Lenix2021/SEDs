@@ -564,22 +564,31 @@ footer h1{
     
     .contents{
         margin-top: 70px;
-        height: 320px;
+        height: 200px;
         width: 350px;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        margin-left: 30px;
     }
     .change-text{
-        font-size: 20px;
-        font-weight: 500px;
+        font-size: 30px;
+        font-weight: 100px;
+        margin-bottom: -20px;
     }
     .contents h1{
         font-size: 30px;
         font-weight: 600px;
         color: var(--text-color);
         margin-left: -0px;
+    }
+    .change-text h3{
+        font-size: 15px;
+    }
+    .ref{
+        margin-top: 15px;
+        margin-left: 80px;
     }
     .left-side p{
         color: var(--text-color);
