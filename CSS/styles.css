@@ -156,22 +156,22 @@ nav{
     align-items:flex-start;
     gap: 4em;
     background-color:#050f17;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
-.left-side .ims{
+.right-side .image{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 300;
 }
 
 
-.ims img{
+.image img{
     top: 10;
     left: 50;
-    height: 500px;
-    width: 600px;
-
+    height: 90px;
+    width: 50px;
 }
 
 .contents{
@@ -187,6 +187,7 @@ nav{
     transition: all 3s linear;
     transition-delay: 0.3s;
     margin-top: 150px;
+    
 }
 
 .contents h1{
@@ -245,7 +246,7 @@ nav{
     padding-top: 40px;
 }
 
-.ref{
+.ref a{
     margin-top: 5px;
     width: 150px;
     background-color:var(--nav);
@@ -255,13 +256,19 @@ nav{
     align-items: center;
     border-radius: 20px;
     margin-left: 150px;
-    
+    border: none;
+    outline: 1px solid black;
+    z-index:3005;
 }
 
 .left-side .ref a{
     text-decoration: none;
     color:black;
     font-weight: 700;
+}
+
+.ref a:hover{
+    cursor: pointer;
 }
 
 .image{
@@ -278,6 +285,105 @@ nav{
     object-fit: contain;
     border-radius: 40px;
 }
+
+
+#popup{
+    position: fixed;
+    width: 40%;
+    height: 45vh;
+    top:40%;
+    left: 50%;
+    z-index: 3007;
+    background:white;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.close-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    color: var(--background-color);
+    text-align: center;
+}
+
+
+.close-display h1:hover{
+    cursor: pointer;
+}
+
+.popup-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#popup h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup-message p{
+    text-align: center;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: all ease ;
+    background:rgb(217, 209, 209);
+    z-index: 299;
+    position: fixed;
+}
+
+#foreign button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size:20px;
+    opacity:1;
+    transition: 2ms;
+}
+
+#foreign button:hover{
+    cursor: pointer;
+    background-color: #f1ce03;
+}
+
+#local a{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size:20px;
+    opacity:1;
+    transition: 2ms;
+    text-decoration: none;
+}
+
+#local a:hover{
+    cursor: pointer;
+    background-color: #f1ce03;
+}
+
+
 
 
 /* ///////////////////////// definig the about section  styles /////////////////*/
@@ -562,6 +668,12 @@ footer h1{
         margin-right: 60px;
     }
     
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 120px;
+        min-height: 90vh;
+    }
     .contents{
         margin-top: 70px;
         height: 227px;
@@ -586,9 +698,33 @@ footer h1{
     .change-text h3{
         font-size: 15px;
     }
-    .ref{
-        margin-top: 15px;
+    .contents p{
+        margin-bottom: 20px;
+    }
+    .left-side{
+        margin-top: -220px;
+    }
+    .ref a{
+        padding-top: 10px;
         margin-left: 90px;
+    }
+
+    .right-side img{
+        margin-top: 75px;
+        position: static;
+        width: 100%;
+
+    }
+
+    #popup{
+        position: fixed;
+        width: 60%;
+        height: 45vh;
+
+    }
+    #popup h1{
+        text-align: center;
+        font-size: 20px;
     }
     .left-side p{
         color: var(--text-color);
@@ -660,6 +796,7 @@ footer h1{
 
     .item .images img {
         margin-left: 100px;
+        
     }
     .about-text .btn{
         display: flex;
