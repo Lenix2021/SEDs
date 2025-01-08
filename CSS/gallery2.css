@@ -1,199 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,200;1,700&display=swap');
-
-/* ///////////////////////// definig the boddy property /////////////////*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins';
-    
+body {
+  background-color: var(--secon-bg-color);
 }
 
-:root{
-    --big-font:2.0rem;
-    --background-color:#0F2A3D;
-    --text-color:#0F2A3D;
-    --seccond-bg:#B64638;
-    --whitesmoke-col:#F5F5F5;
-    --hover-color:#12f7ff;
-    --bg-color:#250821;
-    --secon-bg-color:#292e33;
-    --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
-    --nav:#FFD700;
-    --text:#ffefce;
-    --nav-background:#0f2a3d;
-    --third-background:#050f17;
+.galleryss {
+  flex: 1 1 auto;
+  margin-top: var(--nav-height);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* ///////////////////////// definig the nav styles /////////////////*/
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--nav-background);
-    margin-top: 0;
-    height: 60px;
-    position: fixed;
-    z-index: 300;
-    width: 100%;
-    top: 0;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
-.head{
-    color: var(--nav);
-    font-weight: 50;
-    font-size: 15px;
+.gallery img {
+  width: 100%;
+  object-fit: contain;
+  border-top: 5px solid var(--hover-color);
+  border-bottom: 5px solid var(--hover-color);
+  border-radius: 12px;
 }
 
-.navs ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-left: 50px;
+.gallery img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
-.navs li{
-   display: flex;
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#menu-sidebar{
-    position: fixed;
-    z-index: 3001;
-    height:150px;
-    width:100%;
-    background: var(--nav-background);
-    top: 0;
-    transition: all ease linear 0.2s;
-    visibility: hidden;
+.arrow a {
+  color: goldenrod;
 }
 
-#menu-icon{
-    font-size: 30px;
-    color: var(--text);
-    visibility: hidden;
-}
-
-#menu-icon:hover{
-    cursor: pointer;
-}
-
-.menu-items{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.close-button{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.close-button i{
-    font-size: 25px;
-    background: var(--bg-color);
-    color: var(--hover-color);
-    margin-right:10px;
-    border-radius:2px;
-}
-
-.menu-items .back a{
-    color: var(--text);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-
-.navs a{
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 200px;
-    font-size: large;
-}
-
-.navs a:hover{
-    color: var(--nav);
-    text-shadow:0 0 10px rgba(18,247,255,0.6),
-    0 0 20px rgba(18,247,255,0.6),
-    0 0 30px rgba(18,247,255,0.6),
-    0 0 40px rgba(18,247,255,0.6),
-    0 0 70px rgba(18,247,255,0.6),
-    0 0 80px rgba(18,247,255,0.6),
-    0 0 100px rgba(18,247,255,0.6),
-    0 0 150px rgba(18,247,255,0.6);
-}
-/*///////////////// About us section for /////////////////////////////*/
-body{
-    background-color: var(--secon-bg-color);
-}
-
-.container{
-    margin-top: 50px;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 8%;
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
-    grid-gap: 30px;
-}
-
-.gallery img{
-    width: 100%;
-    object-fit: contain;
-    border-top: 5px solid var(--hover-color);
-    border-bottom: 5px solid var(--hover-color);
-    border-radius: 10px;
-}
-
-.gallery img:hover{
-    transform: scale(1.1);
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.arrow{
-    display:flex;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-.arrow a{
-    color: goldenrod;
-}
-
-.arrow a i{
-    font-size: 40px;
-}
-/* /////////////////////footer styling//////////////////////////*/
-
-footer{
-    background-color: var(--nav-background);
-    height: 7vh;
-    width: 100%;
-    color: var(--nav);
-}
-
-footer h1{
-    font-size: 20px;
-    text-align: center;
-    padding-top: 3px;
-}
-
-@media screen and (max-width:768px) {
-
-    .navs{
-        display: none;
-    }
-    #menu-icon{
-        visibility: visible;
-    }
+.arrow a i {
+  font-size: 40px;
 }

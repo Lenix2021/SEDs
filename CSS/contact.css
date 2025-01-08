@@ -1,274 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;1,200;1,700&display=swap');
-
-/* ///////////////////////// definig the boddy property /////////////////*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins';
-    
+#map {
+  height: 400px;
+  width: 60%;
 }
 
-:root{
-    --big-font:2.0rem;
-    --background-color:#0F2A3D;
-    --text-color:#0F2A3D;
-    --seccond-bg:#B64638;
-    --whitesmoke-col:#F5F5F5;
-    --hover-color:#12f7ff;
-    --bg-color:#250821;
-    --secon-bg-color:#292e33;
-    --neon-box-shadow: 0 0.2rem 0.5rem #12f7ff;
-    --nav:#FFD700;
-    --text:#ffefce;
-    --nav-background:#0f2a3d;
-    --third-background:#050f17;
-}
-/* ///////////////////////// definig the nav styles /////////////////*/
-
-body{
-    background: var(--third-background);
+.maps {
+  flex: 1 1 auto;
+  margin-top: var(--nav-height);
+  background: #050f17;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-/* ///////////////////////// definig the nav styles /////////////////*/
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: var(--nav-background);
-    margin-top: 0;
-    height: 60px;
-    position: fixed;
-    z-index: 300;
-    width: 100%;
-    top: 0;
+.maps-details {
+  display: flex;
+  gap: 4em;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center;
 }
 
-.head{
-    color: var(--nav);
-    font-weight: 50;
-    font-size: 15px;
+.maps h2 {
+  color: var(--text);
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 40px;
+  text-align: center;
 }
 
-.navs ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-left: 50px;
+.contents-for-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.navs li{
-   display: flex;
+.contents-for-left .conts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-#menu-sidebar{
-    position: fixed;
-    z-index: 3001;
-    height:150px;
-    width:100%;
-    background: var(--nav-background);
-    top: 0;
-    visibility: hidden;
+.conts span {
+  padding-right: 30px;
+  font-size: 40px;
+  color: var(--nav);
 }
 
-#menu-icon{
-    font-size: 30px;
-    color: var(--text);
-    visibility: hidden;
+.conts h1 {
+  color: var(--text);
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: 400;
 }
 
-.menu-items{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+.social-media-links {
+  margin-top: 60px;
 }
 
-.close-button{
-    display: flex;
-    justify-content: flex-end;
+.social-media-links h1 {
+  color: var(--text);
+  font-weight: 400;
 }
 
-.close-button i{
-    font-size: 25px;
-    background: var(--bg-color);
-    color: var(--hover-color);
-    margin-right:10px;
-    border-radius:2px;
+.media {
+  display: flex;
+  gap: 1em;
 }
 
-.menu-items .back a{
-    color: var(--text);
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
+.whatsapp-button i {
+  color: var(--nav);
+  font-size: 52px;
+  margin-top: 13px;
 }
 
-
-.navs a{
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 200px;
-    font-size: large;
+.whatsapp-button-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.navs a:hover{
-    color: var(--nav);
-    text-shadow:0 0 10px rgba(18,247,255,0.6),
-    0 0 20px rgba(18,247,255,0.6),
-    0 0 30px rgba(18,247,255,0.6),
-    0 0 40px rgba(18,247,255,0.6),
-    0 0 70px rgba(18,247,255,0.6),
-    0 0 80px rgba(18,247,255,0.6),
-    0 0 100px rgba(18,247,255,0.6),
-    0 0 150px rgba(18,247,255,0.6);
-}
-/*///////////////// About us section for /////////////////////////////*/
-section{
-    padding:10px 5%;
-}
-
-.talk{
-    margin-top: 100px;
-}
-
-.talk h1{
-    color: var(--hover-color);
-}
-#map{
-    height: 400px;
-    width: 60%;
-}
-
-.maps{
-    min-height: 100vh;
-}
-
-.maps-details{
-    display: flex;
-    gap: 4em;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    justify-content: center;
-}
-
-.maps h2{
-    color: var(--text);
-    font-size: 30px;
-    font-weight: 500;
-    padding-top: 40px;
-    text-align: center;
-}
-
-.contents-for-left{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.contents-for-left .conts{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.conts span{
-    padding-right: 30px;
-    font-size: 40px;
-    color: var(--nav);
-}
-.conts h1{
-    color: var(--text);
-    font-size: 18px;
-    padding-top: 10px;
-    font-weight: 400;
-}
-
-.social-media-links{
-    margin-top: 60px;
-}
-
-.social-media-links h1{
-    color: var(--text);
-    font-weight: 400;
-}
-
-.media{
-    display: flex;
-    gap: 1em;
-}
-
-.whatsapp-button i{
-    color: var(--nav);
-    font-size: 52px;
-    margin-top: 13px;
-}
-
-.whatsapp-button-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.whatsapp-button-container span{
-    position: absolute;
-   color: var(--hover-color);
-   margin-right: 40px;
-   transform:rotate(20deg)translateX(10px);
-   opacity:0;
+.whatsapp-button-container span {
+  position: absolute;
+  color: var(--hover-color);
+  margin-right: 40px;
+  transform: rotate(20deg) translateX(10px);
+  opacity: 0;
 }
 
 .whatsapp-button-container:hover .whatsapp-button i {
-    transform: rotate(0deg) translateX(0px);
+  transform: rotate(0deg) translateX(0px);
 }
 
 .whatsapp-button-container:hover .whatsapp-button span {
-    transform: rotate(20deg) translateX(10px);
-    opacity: 1;
-    transition: all 400ms;
-}
-
-.arrow{
-    display:flex;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-.arrow a{
-    color: goldenrod;
-}
-
-.arrow a i{
-    font-size: 40px;
-}
-
-/* /////////////////////footer styling//////////////////////////*/
-
-footer{
-    background-color: var(--nav-background);
-    height: 7vh;
-    width: 100%;
-    color: var(--nav);
-}
-
-footer h1{
-    font-size: 20px;
-    text-align: center;
-    padding-top: 3px;
-}
-
-@media screen and (max-width:768px) {
-
-    .navs{
-        display: none;
-    }
-    #menu-icon{
-        visibility: visible;
-    }
-    #map{
-        height: 400px;
-        width: 100%;
-    }
+  transform: rotate(20deg) translateX(10px);
+  opacity: 1;
+  transition: all 400ms;
 }
